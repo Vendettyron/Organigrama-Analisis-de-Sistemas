@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/landing_pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Pagina del CEO</title>
+</head>
+<body>
+    <header class="header">   
+        <div class="contenedor contenedor_header">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no_margin centrar_texto">Pagina Principal</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor con-sidebar">
+        <div class="entrada_imagen impresion">
+            <div class="titulo">
+                <img src="images/profile_pics/ceo_picture.jpg">
+                <h1 class="titulo_persona">Khaty Estrada</h1>
+                <h3 class="puesto_persona">CEO</h3>
+            </div>
+            <div class="descripcion">
+                <h2 class="impresion">Descripcion</h2>
+                <p class="impresion">Titulo Blog, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
+        <div class="texto_extra">
+            <p class="extras tl_extra">Telefono</p>
+            <p class="extras em_extra">Email</p>
+            <p class="extras num_extra">30710327</p>
+            <p class="extras fl_extra">javier777estrada@gmail.com</p>
+        </div>
+        <div class="boton">
+            <button type="button" class="btn btn-danger" id="boton">Generar PDF</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no_margin centrar_texto">Pagina Principal</h1>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script>
+            
+            document.getElementById("boton").addEventListener("click", function() {
+                const elementoParaConvertir =  document.querySelector(".impresion");
+                html2pdf(elementoParaConvertir,{
+                    margin: 1,
+                    filename: 'documento.pdf',
+                    image: { type: 'jpg', quality: 0.98 }
+                }); 
+            });
+    </script>
+</body>
+</html>
