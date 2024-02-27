@@ -86,11 +86,13 @@ button{
   }
 
   .quienesSomosTitulo{
+    padding-left: 10rem;
+    text-align: left;
     font-size: 4rem;
   }
   .quienesSomosTexto{
     text-align: justify;
-    padding-top: 8rem;
+    padding-top: 10rem;
     padding-right: 10rem;
     padding-left: 10rem;
     font-size: 2rem;
@@ -213,10 +215,20 @@ Navbar decoracion naranja y animacion
 /* QUIENES SOMOS
 --------------------------------------------------------------------- */
 #quinesSomosSection{
+  position: relative;
   display: grid;
-  grid-template-columns: 60% auto ;
+  grid-template-columns: 60% 40% ;
   background-color: var(--malibu-100);
+  padding-top: 5rem ;
 }
+
+#imgQuienesSomos{
+  max-width: 100%;
+  min-width: 100%;
+  transform: scale(1);
+  padding-bottom: 0rem;
+}
+
 
 /* MISION
 --------------------------------------------------------------------- */
@@ -231,6 +243,7 @@ Navbar decoracion naranja y animacion
   width: 1920px;
   right: 2rem;
   opacity: 1;
+  max-width: 100%;
 }
 
 #misionTitulo{
@@ -325,6 +338,12 @@ Navbar decoracion naranja y animacion
     border: 2px solid var(--malibu-900);
   }
 
+  .profile_images{
+    background-color: var(--white);
+    transition: all 0.4s ease;
+  }
+
+
   .rectangle_middle_line{
     display: block;
     position: absolute;
@@ -332,6 +351,7 @@ Navbar decoracion naranja y animacion
     border: 1px solid black;
     height: 75px;
   }
+
   .rectangle_side_title{
     margin: 0px 10px 0px;
   }
@@ -346,15 +366,28 @@ Navbar decoracion naranja y animacion
     left: 60px;
     bottom: 110px;
   }
-  
-  /* LEVEL-1 STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /* ESTILOS GENERALES ORGANIGRAMA
+  ---------------------------------------------------------------- */
   .level-1,
   .level-2,
   .level-3{
+    cursor: pointer;
     background: var(--white);
+    transition: all 0.4s ease;
   }
+   
 
+  .level-1:hover,
+  .level-2:hover,
+  .level-3:hover{
+    background-color: var(--malibu-300);
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+  }
+  
+  /* LEVEL-1 STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .level-1 {
     width: 50%;
     margin: 0 auto 150px;
