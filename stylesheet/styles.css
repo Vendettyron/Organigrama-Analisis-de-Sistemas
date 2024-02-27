@@ -19,6 +19,7 @@
     --malibu-900: #084e72;
     --malibu-950: #06314b;
   }
+
   body{
     padding: 0;
     margin: 0;
@@ -56,7 +57,7 @@ a,
 label,
 div,
 button{
-  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
   h1{
     color: white;
