@@ -1,8 +1,8 @@
 :root {
     --primario: #784D3C;
-    --gris: #E1E1E1;  
+    --gris: #654ac4;  
     --blanco: #FFF;
-    --negro: #000;
+    --negro: #4C379C;
 }
 
 html {
@@ -81,6 +81,7 @@ a {
 
     .impresion {
         grid-column: 1 / 3;
+        text-align: justify;
     }
 
     .entrada_imagen {
@@ -136,6 +137,9 @@ a {
         background-color: var(--negro);
         padding-bottom: 7rem;
         margin-top: 1rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .contenedor {
@@ -149,7 +153,7 @@ a {
         background-repeat: no-repeat;
         background-position: center center;
         position: relative;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: #6C50DB;
         margin-bottom: 2rem;
     }
 

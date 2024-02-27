@@ -1,5 +1,8 @@
 /* Root, resets y clases generales
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+html{
+  font-family: "Roboto", sans-serif;
+}
 :root {
     --level-1: #8dccad;
     --level-2: #f5cc7f;
@@ -7,17 +10,18 @@
     --level-4: #f27c8d;
     --white: white;
     --black: black;
-    --malibu-50: #effaff;
-    --malibu-100: #dff3ff;
-    --malibu-200: #b8e9ff;
-    --malibu-300: #78d9ff;
-    --malibu-400: #42cbff;
-    --malibu-500: #06b0f1;
-    --malibu-600: #008dce;
-    --malibu-700: #0070a7;
-    --malibu-800: #025e8a;
-    --malibu-900: #084e72;
-    --malibu-950: #06314b;
+    --malibu-50: #EFF1FE;
+    --malibu-100: #E2E4FD;
+    --malibu-200: #cacdfb;
+    --malibu-300: #aaacf7;
+    --malibu-400: #8D88F1;
+    --malibu-500: #7C6CE8;
+    --malibu-600: #6C50DB;
+    --malibu-700: #654ac4;
+    --malibu-800: #4C379C;
+    --malibu-900: #41337c;
+    --malibu-950: #271E48;
+    --malibu-1000: #BED2E3;
   }
 
   body{
@@ -59,14 +63,16 @@ div,
 button{
   font-family: "Roboto", sans-serif;
 }
-  h1{
+  #title{
     color: white;
     position: absolute;
     font-size: 100px;
     min-width: 100%;
     text-align: center;
     top: 35%;
-    text-shadow: 13px 13px 13px black; 
+    text-shadow: 15px 15px 15px black; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
   }
 
   h2{
@@ -149,6 +155,7 @@ button{
 .hover_texto{
     text-decoration: none;
     color: black;
+    font-size: 25px;
     transition: max-height 0.4s ease;
     margin-top: 13px;
 }
@@ -219,7 +226,7 @@ Navbar decoracion naranja y animacion
   position: relative;
   display: grid;
   grid-template-columns: 60% 40% ;
-  background-color: var(--malibu-100);
+  background-color: var(--malibu-1000);
   padding-top: 5rem ;
 }
 
@@ -302,7 +309,7 @@ Navbar decoracion naranja y animacion
 /*ORGANIGRAMA
 ---------------------------------------------------------------------------------------*/
   #organigrama{
-   background-color: var(--malibu-200);
+   background-color: var(--malibu-1000);
    min-width: 100%;
   }
 
