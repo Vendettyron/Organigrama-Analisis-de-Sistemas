@@ -136,9 +136,6 @@ a {
         background-color: var(--negro);
         padding-bottom: 7rem;
         margin-top: 1rem;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
 
     .contenedor {
